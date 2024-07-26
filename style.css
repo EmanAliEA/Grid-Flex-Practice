@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backwhite: white;
+  --bodycolor: rgb(8, 70, 101);
+  /* display: flex;
+  align-content: center;
+  justify-content: center; */
+}
+body {
+  background: linear-gradient(
+    to right,
+    var(--bodycolor),
+    var(--bodycolor),
+    rgb(85, 155, 190)
+  );
+}
+.container {
+  /* height: 100%; */
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: 100px 100px 100px 100px;
+  justify-content: center;
+  align-content: center;
+  padding: 40px;
+  gap: 15px;
+}
+.bridge {
+  /* width: 200px; */
+  /* height: 200px;  */
+  background-color: var(--backwhite);
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  align-self: stretch;
+  display: flex;
+}
+.bridge img {
+  width: 50%;
+  height: 100%;
+}
+.bridgeText {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 80px; */
+}
+.bridgeHeader h2 {
+  margin-bottom: 8px;
+}
+.bridgebottom {
+  display: flex;
+  justify-content: space-between;
+}
+.lemon {
+  /* width: 200px; */
+  /* height: 200px; */
+  background-color: var(--bodycolor);
+  grid-column: 4/5;
+  grid-row: 1 / 7;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.lemon1 {
+  background-color: var(--backwhite);
+  /* flex-basis: 40%; */
+  height: 55%;
+}
+.lemon1 img {
+  width: 100%;
+  height: 40%;
+  /* flex-basis: 20%; */
+  flex-grow: 1;
+}
+.lemon1 .lemonText {
+  /* align-self: stretch; */
+  flex-grow: 1;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 11px;
+  height: 60%;
+}
+
+.lemon1 .lemonbottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orange {
+  /* width: 200px;
+  height: 200px; */
+  background-color: var(--bodycolor);
+  grid-row: 3 / span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.orange1,
+.orange2 {
+  background-color: var(--backwhite);
+}
+.orange img {
+  width: 100%;
+  height: 73%;
+}
+.orange1 {
+  display: flex;
+  flex-direction: column;
+  height: 163%;
+}
+.orange1 .orangeText {
+  height: 60%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orange2 {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orange2 .orangeText {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.orangeText .orangebottom {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+.orangeText h2 {
+  margin-bottom: 5px;
+}
+
+.lemon2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--backwhite);
+  height: calc(45% / 2);
+}
+.lemon2 .lemonText {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.lemon2 .lemonbottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lemonTextheader h2 {
+  margin-bottom: 5px;
+}
+
+.burger {
+  background-color: var(--backwhite);
+  grid-column: 1/3;
+  grid-row: 3 / span 4;
+  display: flex;
+  flex-direction: column;
+}
+.burger img {
+  width: 100%;
+  height: 65%;
+}
+.burgerText {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.burgerbottom {
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  font-size: 19px;
+}
